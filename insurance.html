@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Assurance & Tarifs - Best Clinic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    background: url('images/clinic.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+}
+
+/* LOGOS */
+.insurance-logos img {
+    height: 60px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.insurance-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* SECTION */
+section {
+    padding: 60px 0;
+}
+
+/* FAQ */
+.accordion-button {
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+<div class="container">
+    <a class="navbar-brand fw-bold">Best Clinic</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link">Services</a></li>
+            <li class="nav-item"><a class="nav-link">Médecins</a></li>
+            <li class="nav-item"><a class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Assurance & Tarifs</h1>
+        <p>Des soins accessibles pour tous</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="container text-center">
+    <h2 class="mb-4">Nos options de paiement</h2>
+
+    <p>
+        Best Clinic propose plusieurs solutions de paiement afin de garantir
+        l’accès aux soins pour tous nos patients.
+    </p>
+
+    <p>
+        Nous acceptons les assurances partenaires ainsi que les paiements directs.
+    </p>
+</section>
+
+<!-- ASSURANCES -->
+<section class="bg-light text-center">
+    <div class="container">
+        <h2 class="mb-5">Assurances acceptées</h2>
+
+        <div class="insurance-logos">
+
+            <img src="images/ass1.png">
+            <img src="images/ass2.png">
+            <img src="images/ass3.jpg">
+            <img src="images/ass4.jpg">
+            <img src="images/ass5.png">
+            <img src="images/ass6.jpg">
+            <img src="images/ass7.png">
+            <img src="images/ass8.png">
+           
+
+        </div>
+
+    </div>
+</section>
+
+<!-- TARIFS -->
+<section class="container text-center">
+    <h2 class="mb-4">Tarifs indicatifs</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Consultation</h5>
+                    <p>À partir de 50 000 GNF</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Urgence</h5>
+                    <p>À partir de 100 000 GNF</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Analyses</h5>
+                    <p>Selon examen</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-light">
+<div class="container">
+
+<h2 class="mb-4 text-center">Questions fréquentes</h2>
+
+<div class="accordion" id="faq">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+        Quels moyens de paiement acceptez-vous ?
+      </button>
+    </h2>
+    <div id="q1" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        Nous acceptons espèces, Orange Money, MTN MoMo et cartes bancaires.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+        Est-ce que toutes les assurances sont acceptées ?
+      </button>
+    </h2>
+    <div id="q2" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Nous travaillons avec plusieurs assurances partenaires.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+        Les tarifs sont-ils fixes ?
+      </button>
+    </h2>
+    <div id="q3" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Les tarifs peuvent varier selon le type de soin et l’assurance.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="container text-center">
+    <h2>Besoin d’informations ?</h2>
+    <p>Contactez-nous dès maintenant</p>
+
+    <a href="tel:+224622340197" class="btn btn-primary m-2">Appeler</a>
+    <a href="https://wa.me/224622340197" class="btn btn-success m-2">WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4">
+<p>© 2026 Best Clinic</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
